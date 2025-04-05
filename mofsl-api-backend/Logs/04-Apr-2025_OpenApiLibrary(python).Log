@@ -1,0 +1,170 @@
+2025-04-04 00:15:56             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 00:15:57             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 00:15:57             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 00:15:57             FAILED             MOFSLOPENAPI.py             login_Client_id or Password is empty
+2025-04-04 00:15:57             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:15:57             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:15:57             ERROR             MOFSLOPENAPI.py             Invalid UserId Or Password
+2025-04-04 00:16:44             SUCCESS             MOFSLOPENAPI.py             Initilaize resendotp request send
+2025-04-04 00:16:44             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:16:45             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:16:45             SUCCESS             MOFSLOPENAPI.py             resendotp request sent Successfully
+2025-04-04 00:26:25             SUCCESS             MOFSLOPENAPI.py             Initilaize resendotp request send
+2025-04-04 00:26:25             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:26:26             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:26:26             SUCCESS             MOFSLOPENAPI.py             resendotp request sent Successfully
+2025-04-04 00:26:40             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 00:26:41             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 00:26:41             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 00:26:41             SUCCESS             MOFSLOPENAPI.py             Initilaize resendotp request send
+2025-04-04 00:26:41             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:26:41             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:26:41             SUCCESS             MOFSLOPENAPI.py             resendotp request sent Successfully
+2025-04-04 00:26:56             FAILED             MOFSLOPENAPI.py             login_Client_id or Password is empty
+2025-04-04 00:26:56             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:26:56             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:26:56             ERROR             MOFSLOPENAPI.py             Invalid UserId Or Password
+2025-04-04 00:28:04             SUCCESS             MOFSLOPENAPI.py             Initilaize resendotp request send
+2025-04-04 00:28:04             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:28:04             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:28:04             SUCCESS             MOFSLOPENAPI.py             resendotp request sent Successfully
+2025-04-04 00:35:53             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 00:35:53             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:35:53             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:35:53             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 00:36:01             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 00:36:01             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:36:02             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:36:02             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 00:36:40             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 00:36:42             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 00:36:42             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 00:36:42             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 00:36:42             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:36:42             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:36:42             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 00:41:03             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 00:41:04             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 00:41:04             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 00:41:04             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 00:41:04             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:41:04             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:41:04             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 00:44:05             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 00:44:05             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 00:44:05             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 00:44:05             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 09:42:09             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 09:42:12             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 09:42:12             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 09:42:12             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 09:42:12             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 09:42:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 09:42:13             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 09:42:24             SUCCESS             MOFSLOPENAPI.py             Initilaize verifyotp request send
+2025-04-04 09:42:24             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 09:42:24             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 09:42:24             SUCCESS             MOFSLOPENAPI.py             verifyotp request sent Successfully
+2025-04-04 09:59:07             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 09:59:07             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 09:59:07             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 09:59:07             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 11:46:22             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 11:46:28             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 11:46:28             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 11:46:28             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 11:46:28             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 11:46:28             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 11:46:28             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 12:40:03             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 12:40:18             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 12:40:18             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 12:40:18             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 12:40:18             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 12:40:19             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 12:40:19             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 12:40:49             SUCCESS             MOFSLOPENAPI.py             Initilaize verifyotp request send
+2025-04-04 12:40:49             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 12:40:50             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 12:40:50             SUCCESS             MOFSLOPENAPI.py             verifyotp request sent Successfully
+2025-04-04 12:52:56             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 12:52:57             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 12:52:57             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 12:52:57             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 12:52:57             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 12:52:57             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 12:52:57             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 12:53:20             SUCCESS             MOFSLOPENAPI.py             Initilaize verifyotp request send
+2025-04-04 12:53:20             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 12:53:20             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 12:53:20             SUCCESS             MOFSLOPENAPI.py             verifyotp request sent Successfully
+2025-04-04 12:53:31             SUCCESS             MOFSLOPENAPI.py             Initilaize verifyotp request send
+2025-04-04 12:53:31             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 12:53:31             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 12:53:31             SUCCESS             MOFSLOPENAPI.py             verifyotp request sent Successfully
+2025-04-04 12:53:32             SUCCESS             MOFSLOPENAPI.py             Initilaize resendotp request send
+2025-04-04 12:53:32             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 12:53:33             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 12:53:33             SUCCESS             MOFSLOPENAPI.py             resendotp request sent Successfully
+2025-04-04 12:53:43             SUCCESS             MOFSLOPENAPI.py             Initilaize verifyotp request send
+2025-04-04 12:53:43             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 12:53:43             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 12:53:43             SUCCESS             MOFSLOPENAPI.py             verifyotp request sent Successfully
+2025-04-04 15:48:03             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 15:48:05             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 15:48:05             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 15:48:05             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 15:48:05             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 15:48:05             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 15:48:05             SUCCESS             MOFSLOPENAPI.py             Login sucessfully
+2025-04-04 15:59:18             FAILED             MOFSLOPENAPI.py             login_Client_id or Password is empty
+2025-04-04 15:59:18             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 15:59:18             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 15:59:18             ERROR             MOFSLOPENAPI.py             Invalid UserId Or Password
+2025-04-04 16:04:37             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 16:04:42             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 16:04:42             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 16:04:42             FAILED             MOFSLOPENAPI.py             login_Client_id or Password is empty
+2025-04-04 16:04:42             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 16:04:43             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 16:04:43             ERROR             MOFSLOPENAPI.py             Invalid User Id Or Api Key
+2025-04-04 16:06:47             FAILED             MOFSLOPENAPI.py             login_Client_id or Password is empty
+2025-04-04 16:06:47             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 16:06:48             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 16:06:48             ERROR             MOFSLOPENAPI.py             Invalid User Id Or Api Key
+2025-04-04 16:06:55             SUCCESS             MOFSLOPENAPI.py             Initilaize verifyotp request send
+2025-04-04 16:06:55             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 16:06:55             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 16:06:55             SUCCESS             MOFSLOPENAPI.py             verifyotp request sent Successfully
+2025-04-04 16:07:13             SUCCESS             MOFSLOPENAPI.py             Initilaize verifyotp request send
+2025-04-04 16:07:13             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 16:07:13             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 16:07:13             SUCCESS             MOFSLOPENAPI.py             verifyotp request sent Successfully
+2025-04-04 16:07:17             SUCCESS             MOFSLOPENAPI.py             Initilaize resendotp request send
+2025-04-04 16:07:17             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 16:07:18             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 16:07:18             SUCCESS             MOFSLOPENAPI.py             resendotp request sent Successfully
+2025-04-04 16:08:04             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 16:08:06             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 16:08:06             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 16:08:06             SUCCESS             MOFSLOPENAPI.py             Initilaize verifyotp request send
+2025-04-04 16:08:06             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 16:08:06             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 16:08:06             SUCCESS             MOFSLOPENAPI.py             verifyotp request sent Successfully
+2025-04-04 16:17:34             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 16:17:36             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 16:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 16:17:36             FAILED             MOFSLOPENAPI.py             login_Client_id or Password is empty
+2025-04-04 16:17:36             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 16:17:36             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 16:17:36             ERROR             MOFSLOPENAPI.py             Invalid UserId Or Password
+2025-04-04 16:25:06             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 16:25:15             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 16:25:15             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 16:25:43             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor
+2025-04-04 16:25:44             SUCCESS             MOFSLOPENAPI.py             GetManufacturerunknown
+2025-04-04 16:25:44             SUCCESS             MOFSLOPENAPI.py             Initilize Constructor Done
+2025-04-04 16:25:44             SUCCESS             MOFSLOPENAPI.py             Initilize login request send
+2025-04-04 16:25:44             SUCCESS             MOFSLOPENAPI.py             Initilize Post WebRequest Sent
+2025-04-04 16:25:44             SUCCESS             MOFSLOPENAPI.py             Post WebRequest Send Successfully
+2025-04-04 16:25:44             SUCCESS             MOFSLOPENAPI.py             Login sucessfully

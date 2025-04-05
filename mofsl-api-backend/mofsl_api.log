@@ -1,0 +1,126 @@
+2025-04-03 19:11:55,469 - app - WARNING - MOFSLOPENAPI module not found. You'll need to install it before using the API features.
+2025-04-03 19:11:55,484 - app - INFO - Database initialized successfully
+2025-04-03 19:11:55,487 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-04-03 19:11:55,487 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 19:12:38,474 - app - INFO - API log accessed
+2025-04-03 19:12:38,476 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:12:38] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:12:38,483 - app - INFO - API log accessed
+2025-04-03 19:12:38,484 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:12:38] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:13:41,194 - app - INFO - API log accessed
+2025-04-03 19:13:41,195 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:13:41] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:13:41,198 - app - INFO - API log accessed
+2025-04-03 19:13:41,202 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:13:41] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:15:54,593 - app - INFO - API log accessed
+2025-04-03 19:15:54,594 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:15:54] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:15:54,597 - app - INFO - API log accessed
+2025-04-03 19:15:54,598 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:15:54] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:16:48,633 - app - WARNING - MOFSLOPENAPI module not found. You'll need to install it before using the API features.
+2025-04-03 19:16:48,647 - app - INFO - Database initialized successfully
+2025-04-03 19:16:48,649 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-04-03 19:16:48,649 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 19:16:52,820 - app - INFO - API log accessed
+2025-04-03 19:16:52,821 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:16:52] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:16:52,824 - app - INFO - API log accessed
+2025-04-03 19:16:52,825 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:16:52] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:17:10,714 - app - INFO - API Request: OPTIONS /api/login
+2025-04-03 19:17:10,715 - app - DEBUG - Request Headers: {'Host': 'localhost:5005', 'Connection': 'keep-alive', 'Accept': '*/*', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type', 'Origin': 'http://localhost:3001', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3001/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,hi;q=0.8'}
+2025-04-03 19:17:10,715 - app - INFO - API Response: OPTIONS /api/login - Status: 200 - Duration: 0ms
+2025-04-03 19:17:10,715 - app - DEBUG - Response Headers: {'Content-Type': 'text/html; charset=utf-8', 'Allow': 'POST, OPTIONS', 'Access-Control-Allow-Origin': 'http://localhost:3001', 'Access-Control-Allow-Headers': 'Content-Type,Authorization', 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS', 'Access-Control-Allow-Credentials': 'true'}
+2025-04-03 19:17:10,715 - app - DEBUG - Response Body: [non-JSON data, length: 0 chars]
+2025-04-03 19:17:10,716 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:17:10] "OPTIONS /api/login HTTP/1.1" 200 -
+2025-04-03 19:17:10,720 - app - INFO - API Request: POST /api/login
+2025-04-03 19:17:10,720 - app - DEBUG - Request Headers: {'Host': 'localhost:5005', 'Connection': 'keep-alive', 'Content-Length': '24', 'Sec-Ch-Ua-Platform': '"Linux"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3001', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3001/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,hi;q=0.8', 'Cookie': '[REDACTED]'}
+2025-04-03 19:17:10,721 - app - DEBUG - Request Body: {"client_id": "SRNG1802"}
+2025-04-03 19:17:10,721 - app - INFO - Login request for client ID: SRNG1802
+2025-04-03 19:17:10,722 - app - DEBUG - Initializing MOFSL client for: SRNG1802
+2025-04-03 19:17:10,722 - app - INFO - MOFSL API REQUEST - login: {"userid": "SRNG1802", "password": "[REDACTED]", "two_fa": "BCRPH6980E", "totp": "FALSE", "vendor_info": "SRNG1802"}
+2025-04-03 19:17:10,722 - app - INFO - MOFSL API RESPONSE - login: {"isAuthTokenVerified": "FALSE", "AuthToken": "[REDACTED]"}
+2025-04-03 19:17:10,723 - app - INFO - OTP verification needed for SRNG1802
+2025-04-03 19:17:10,723 - app - INFO - API Response: POST /api/login - Status: 200 - Duration: 2ms
+2025-04-03 19:17:10,723 - app - DEBUG - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '107', 'Access-Control-Allow-Origin': 'http://localhost:3001', 'Access-Control-Allow-Headers': 'Content-Type,Authorization', 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS', 'Access-Control-Allow-Credentials': 'true'}
+2025-04-03 19:17:10,723 - app - DEBUG - Response Body: {"client_id": "SRNG1802", "message": "OTP sent to registered mobile/email", "needOTP": true, "status": "SUCCESS"}
+2025-04-03 19:17:10,724 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:17:10] "POST /api/login HTTP/1.1" 200 -
+2025-04-03 19:17:10,731 - app - INFO - API log accessed
+2025-04-03 19:17:10,732 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:17:10] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:17:34,770 - app - INFO - API log accessed
+2025-04-03 19:17:34,771 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:17:34] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:17:34,773 - app - INFO - API log accessed
+2025-04-03 19:17:34,778 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:17:34] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:17:35,695 - app - INFO - API log accessed
+2025-04-03 19:17:35,697 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:17:35] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:17:35,704 - app - INFO - API log accessed
+2025-04-03 19:17:35,706 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:17:35] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:18:56,554 - app - INFO - API Request: OPTIONS /api/login
+2025-04-03 19:18:56,554 - app - DEBUG - Request Headers: {'Host': 'localhost:5005', 'Connection': 'keep-alive', 'Accept': '*/*', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type', 'Origin': 'http://localhost:3001', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3001/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,hi;q=0.8'}
+2025-04-03 19:18:56,555 - app - INFO - API Response: OPTIONS /api/login - Status: 200 - Duration: 0ms
+2025-04-03 19:18:56,555 - app - DEBUG - Response Headers: {'Content-Type': 'text/html; charset=utf-8', 'Allow': 'POST, OPTIONS', 'Access-Control-Allow-Origin': 'http://localhost:3001', 'Access-Control-Allow-Headers': 'Content-Type,Authorization', 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS', 'Access-Control-Allow-Credentials': 'true'}
+2025-04-03 19:18:56,555 - app - DEBUG - Response Body: [non-JSON data, length: 0 chars]
+2025-04-03 19:18:56,555 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:18:56] "OPTIONS /api/login HTTP/1.1" 200 -
+2025-04-03 19:18:56,559 - app - INFO - API Request: POST /api/login
+2025-04-03 19:18:56,560 - app - DEBUG - Request Headers: {'Host': 'localhost:5005', 'Connection': 'keep-alive', 'Content-Length': '24', 'Sec-Ch-Ua-Platform': '"Linux"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3001', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3001/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,hi;q=0.8', 'Cookie': '[REDACTED]'}
+2025-04-03 19:18:56,560 - app - DEBUG - Request Body: {"client_id": "SRNG1802"}
+2025-04-03 19:18:56,560 - app - INFO - Login request for client ID: SRNG1802
+2025-04-03 19:18:56,561 - app - DEBUG - Initializing MOFSL client for: SRNG1802
+2025-04-03 19:18:56,561 - app - INFO - MOFSL API REQUEST - login: {"userid": "SRNG1802", "password": "[REDACTED]", "two_fa": "BCRPH6980E", "totp": "FALSE", "vendor_info": "SRNG1802"}
+2025-04-03 19:18:56,562 - app - INFO - MOFSL API RESPONSE - login: {"isAuthTokenVerified": "FALSE", "AuthToken": "[REDACTED]"}
+2025-04-03 19:18:56,562 - app - INFO - OTP verification needed for SRNG1802
+2025-04-03 19:18:56,562 - app - INFO - API Response: POST /api/login - Status: 200 - Duration: 2ms
+2025-04-03 19:18:56,562 - app - DEBUG - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '107', 'Access-Control-Allow-Origin': 'http://localhost:3001', 'Access-Control-Allow-Headers': 'Content-Type,Authorization', 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS', 'Access-Control-Allow-Credentials': 'true'}
+2025-04-03 19:18:56,562 - app - DEBUG - Response Body: {"client_id": "SRNG1802", "message": "OTP sent to registered mobile/email", "needOTP": true, "status": "SUCCESS"}
+2025-04-03 19:18:56,563 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:18:56] "POST /api/login HTTP/1.1" 200 -
+2025-04-03 19:18:56,571 - app - INFO - API log accessed
+2025-04-03 19:18:56,572 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:18:56] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:19:11,311 - app - INFO - API log accessed
+2025-04-03 19:19:11,312 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:19:11] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:19:11,315 - app - INFO - API log accessed
+2025-04-03 19:19:11,316 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:19:11] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:19:18,711 - app - INFO - API log accessed
+2025-04-03 19:19:18,712 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:19:18] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:19:18,715 - app - INFO - API log accessed
+2025-04-03 19:19:18,716 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:19:18] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:19:36,043 - app - INFO - API log accessed
+2025-04-03 19:19:36,044 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:19:36] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:19:36,046 - app - INFO - API log accessed
+2025-04-03 19:19:36,047 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:19:36] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:19:42,123 - app - INFO - API log accessed
+2025-04-03 19:19:42,124 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:19:42] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:19:42,127 - app - INFO - API log accessed
+2025-04-03 19:19:42,131 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:19:42] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:20:10,847 - app - INFO - API Request: OPTIONS /api/login
+2025-04-03 19:20:10,848 - app - DEBUG - Request Headers: {'Host': 'localhost:5005', 'Connection': 'keep-alive', 'Accept': '*/*', 'Access-Control-Request-Method': 'POST', 'Access-Control-Request-Headers': 'content-type', 'Origin': 'http://localhost:3001', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3001/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,hi;q=0.8'}
+2025-04-03 19:20:10,848 - app - INFO - API Response: OPTIONS /api/login - Status: 200 - Duration: 0ms
+2025-04-03 19:20:10,848 - app - DEBUG - Response Headers: {'Content-Type': 'text/html; charset=utf-8', 'Allow': 'POST, OPTIONS', 'Access-Control-Allow-Origin': 'http://localhost:3001', 'Access-Control-Allow-Headers': 'Content-Type,Authorization', 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS', 'Access-Control-Allow-Credentials': 'true'}
+2025-04-03 19:20:10,849 - app - DEBUG - Response Body: [non-JSON data, length: 0 chars]
+2025-04-03 19:20:10,849 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:20:10] "OPTIONS /api/login HTTP/1.1" 200 -
+2025-04-03 19:20:10,854 - app - INFO - API Request: POST /api/login
+2025-04-03 19:20:10,854 - app - DEBUG - Request Headers: {'Host': 'localhost:5005', 'Connection': 'keep-alive', 'Content-Length': '24', 'Sec-Ch-Ua-Platform': '"Linux"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Sec-Ch-Ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"', 'Content-Type': 'application/json', 'Sec-Ch-Ua-Mobile': '?0', 'Origin': 'http://localhost:3001', 'Sec-Fetch-Site': 'same-site', 'Sec-Fetch-Mode': 'cors', 'Sec-Fetch-Dest': 'empty', 'Referer': 'http://localhost:3001/', 'Accept-Encoding': 'gzip, deflate, br, zstd', 'Accept-Language': 'en-US,en;q=0.9,hi;q=0.8', 'Cookie': '[REDACTED]'}
+2025-04-03 19:20:10,855 - app - DEBUG - Request Body: {"client_id": "SRNG1802"}
+2025-04-03 19:20:10,855 - app - INFO - Login request for client ID: SRNG1802
+2025-04-03 19:20:10,856 - app - DEBUG - Initializing MOFSL client for: SRNG1802
+2025-04-03 19:20:10,856 - app - INFO - MOFSL API REQUEST - login: {"userid": "SRNG1802", "password": "[REDACTED]", "two_fa": "BCRPH6980E", "totp": "FALSE", "vendor_info": "SRNG1802"}
+2025-04-03 19:20:10,856 - app - INFO - MOFSL API RESPONSE - login: {"isAuthTokenVerified": "FALSE", "AuthToken": "[REDACTED]"}
+2025-04-03 19:20:10,857 - app - INFO - OTP verification needed for SRNG1802
+2025-04-03 19:20:10,857 - app - INFO - API Response: POST /api/login - Status: 200 - Duration: 3ms
+2025-04-03 19:20:10,857 - app - DEBUG - Response Headers: {'Content-Type': 'application/json', 'Content-Length': '107', 'Access-Control-Allow-Origin': 'http://localhost:3001', 'Access-Control-Allow-Headers': 'Content-Type,Authorization', 'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS', 'Access-Control-Allow-Credentials': 'true'}
+2025-04-03 19:20:10,857 - app - DEBUG - Response Body: {"client_id": "SRNG1802", "message": "OTP sent to registered mobile/email", "needOTP": true, "status": "SUCCESS"}
+2025-04-03 19:20:10,859 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:20:10] "POST /api/login HTTP/1.1" 200 -
+2025-04-03 19:20:10,865 - app - INFO - API log accessed
+2025-04-03 19:20:10,866 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:20:10] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:20:31,013 - app - INFO - API log accessed
+2025-04-03 19:20:31,014 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:20:31] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:20:31,016 - app - INFO - API log accessed
+2025-04-03 19:20:31,021 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:20:31] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:27:51,390 - app - INFO - API log accessed
+2025-04-03 19:27:51,399 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:27:51] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:27:51,402 - app - INFO - API log accessed
+2025-04-03 19:27:51,402 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:27:51] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:27:55,413 - app - INFO - API log accessed
+2025-04-03 19:27:55,414 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:27:55] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:27:55,415 - app - INFO - API log accessed
+2025-04-03 19:27:55,421 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:27:55] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:28:06,666 - app - INFO - API log accessed
+2025-04-03 19:28:06,667 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:28:06] "GET /debug/api-log HTTP/1.1" 200 -
+2025-04-03 19:28:06,669 - app - INFO - API log accessed
+2025-04-03 19:28:06,670 - werkzeug - INFO - 127.0.0.1 - - [03/Apr/2025 19:28:06] "GET /debug/api-log HTTP/1.1" 200 -
