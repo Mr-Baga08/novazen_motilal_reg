@@ -56,25 +56,33 @@ app.logger.setLevel(logging.INFO)
 app.logger.info('Application starting up')
 
 # Enhanced CORS configuration with specific origins
-allowed_origins = os.getenv("ALLOWED_ORIGINS", "http://192.168.0.180:3001").split(",")
+allowed_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:3001").split(",")
 CORS(app, 
      origins=allowed_origins,
      supports_credentials=True,
      allow_headers=["Content-Type", "Authorization"],
      methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"])
 
+
 bcrypt = Bcrypt(app)
 
 # Configure server-side session
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY", secrets.token_hex(16))
 app.config["SESSION_TYPE"] = "filesystem"
-app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_PERMANENT"] = True # Changed to True for persistence
 app.config["SESSION_USE_SIGNER"] = True
+app.config["SESSION_COOKIE_PATH"] = "/"
+app.config["SESSION_COOKIE_DOMAIN"] = None
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"  # Added for better cookie security
 app.config["SESSION_COOKIE_SECURE"] = os.getenv("HTTPS_ENABLED", "False").lower() == "true"  # True in HTTPS environments
 app.config["SESSION_COOKIE_HTTPONLY"] = True  # Prevents JavaScript access to the cookie
-app.config["PERMANENT_SESSION_LIFETIME"] = 3600  # Session timeout in seconds (1 hour)
-app.config["ENV"] = os.getenv("FLASK_ENV", "production")
+app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(hours=24)  # Changed to timedelta object
+app.config["SESSION_FILE_DIR"] = os.path.join(os.getcwd(), 'flask_session')
+app.config["SESSION_COOKIE_NAME"] = "mofsl_session"
+
+# Create the session directory if it doesn't exist
+os.makedirs(app.config["SESSION_FILE_DIR"], exist_ok=True)
+
 Session(app)
 
 # Configuration
@@ -172,10 +180,10 @@ def add_auth_token():
         if hasattr(g, 'mofsl_client') and hasattr(g.mofsl_client, 'set_auth_token'):
             g.mofsl_client.set_auth_token(session['auth_token'])
     
-    # Log request for audit purposes (excluding certain paths)
-    excluded_paths = ['/static/', '/favicon.ico']
-    if not any(request.path.startswith(path) for path in excluded_paths):
-        log_request()
+    # # Log request for audit purposes (excluding certain paths)
+    # excluded_paths = ['/static/', '/favicon.ico']
+    # if not any(request.path.startswith(path) for path in excluded_paths):
+    #     log_request()
 
 # Initialize SQLite database
 def init_db():
@@ -223,6 +231,18 @@ def init_db():
         details TEXT
     )
     ''')
+
+    # Create credential_changes table for auditing
+    cursor.execute('''
+    CREATE TABLE IF NOT EXISTS credential_changes (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        timestamp TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+        client_id TEXT NOT NULL,
+        changed_by TEXT,
+        field_changed TEXT NOT NULL,
+        FOREIGN KEY (client_id) REFERENCES clients (client_id)
+    )
+    ''')
     
     conn.commit()
     conn.close()
@@ -250,6 +270,7 @@ def load_clients():
         }
     
     conn.close()
+    print(clients)
     
     # If no clients in database, load from environment variables
     if not clients:
@@ -304,42 +325,14 @@ def save_client(client_id, client_data):
     
     return True
 
-
-# # Save a client to the database
-# def save_client(client_id, client_data):
-#     conn = sqlite3.connect(DB_PATH)
-#     cursor = conn.cursor()
-    
-#     # Hash the password if provided
-#     password = client_data.get('password', '')
-#     if password:
-#         hashed_password = password
-#     else:
-#         hashed_password = ''
-    
-#     cursor.execute(
-#         "INSERT OR REPLACE INTO clients (client_id, api_key, userid, password, two_fa, vendor_info, client_code) VALUES (?, ?, ?, ?, ?, ?, ?)",
-#         (
-#             client_id,
-#             client_data['api_key'],
-#             client_data['userid'],
-#             hashed_password,
-#             client_data['two_fa'],
-#             client_data['vendor_info'],
-#             client_data.get('client_code')
-#         )
-#     )
-    
-#     conn.commit()
-#     conn.close()
-    
-#     return True
-
 # Store OX code in the database
 def store_ox_code(client_id, userid, auth_token):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # Set token expiration (24 hours from now)
     expires_at = (datetime.now() + timedelta(hours=24)).strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Set token in session with explicit debugging
+    print(f"Before setting session: client_id={session.get('client_id')}, auth_token={'present' if 'auth_token' in session else 'missing'}")
     
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
@@ -359,10 +352,15 @@ def store_ox_code(client_id, userid, auth_token):
     conn.commit()
     conn.close()
     
-    # Also store token in session for future requests
+    # Set both client_id and auth_token in session
+    session['client_id'] = client_id
     session['auth_token'] = auth_token
     session['token_expires_at'] = expires_at
     
+    # Force the session to be saved
+    session.modified = True
+    
+    print(f"After setting session: client_id={session.get('client_id')}, auth_token={'present' if 'auth_token' in session else 'missing'}")
     app.logger.info(f"Stored new auth token for client {client_id}")
     
     return True
@@ -412,13 +410,6 @@ def get_mofsl_client(client_id):
         set_auth_token_on_client(client_id, session['auth_token'])
     
     return client
-
-# Add a new function for verifying password
-#def verify_password(stored_password, provided_password):
-#    """Verify password against stored hash"""
-#    if not stored_password:
-#        return False
-#    return check_password_hash(stored_password, provided_password)
 
 # Helper function for authenticated API calls
 def make_authenticated_api_call(client_id, method_name, *args, **kwargs):
@@ -524,6 +515,7 @@ def register():
 def login():
     """Client authentication and OTP initiation"""
     data = request.json
+    print(data)
     if not data:
         return jsonify({
             'status': 'ERROR',
@@ -532,7 +524,7 @@ def login():
         
     client_id = data.get('client_id')
     password = data.get('password', '')  # Get password from request
-    
+    print(data)
     if not client_id:
         return jsonify({
             'status': 'ERROR',
@@ -541,7 +533,7 @@ def login():
     
     # Load clients
     clients = load_clients()
-    
+    print(data)
     # Check if client exists
     if client_id not in clients:
         return jsonify({
@@ -550,7 +542,7 @@ def login():
         }), 404
     
     credentials = clients[client_id]
-    
+    print(data)
     try:
         # Initialize MOFSL client
         mofsl_client = get_mofsl_client(client_id)
@@ -565,7 +557,7 @@ def login():
         # But we need to send the original password to the MOFSL API
         # For this login method, we'll use the password sent from the frontend
         # If no password provided in the request, use an empty string
-        password = data.get('password', '') or ''
+        # password = data.get('password', '') or ''
         
         # Attempt login to get OTP
         login_response = mofsl_client.login(
@@ -583,6 +575,7 @@ def login():
         
         # Store login response in session for OTP verification
         session['login_response'] = login_response
+        session.modified = True
         
         # Check if OTP verification is needed
         if login_response.get('isAuthTokenVerified') == 'TRUE':
@@ -652,6 +645,7 @@ def verify_otp():
         # Update session with client_id from request if needed
         if 'client_id' not in session and client_id:
             session['client_id'] = client_id
+            session.modified = True
         
         # Load configuration
         clients = load_clients()
@@ -660,8 +654,7 @@ def verify_otp():
                 'status': 'ERROR',
                 'message': 'Invalid client ID'
             }), 404
-        print(mofsl_clients)
-
+        
         # Initialize MOFSL client
         mofsl_client = get_mofsl_client(client_id)
         
@@ -689,9 +682,24 @@ def verify_otp():
                 set_auth_token_on_client(client_id, auth_token)
                 
                 print(f"Auth token stored after OTP verification for client {client_id}: {auth_token[:10]}...")
+            else:
+                # If the API didn't return an auth token, we might need to use the login response token
+                login_response = session.get('login_response', {})
+                auth_token = login_response.get('AuthToken')
+                if auth_token:
+                    # Store OX code in database and session
+                    store_ox_code(client_id, credentials['userid'], auth_token)
+                    
+                    # Set token on MOFSL client for future API calls
+                    set_auth_token_on_client(client_id, auth_token)
+                    
+                    print(f"Using login auth token after OTP verification for client {client_id}: {auth_token[:10]}...")
             
             # Keep client_id in session but remove login response
             session.pop('login_response', None)
+            
+            # Force session save
+            session.modified = True
             
             return jsonify({
                 'status': 'SUCCESS',
@@ -732,6 +740,7 @@ def resend_otp():
         # Update session with client_id from request if needed
         if 'client_id' not in session and client_id:
             session['client_id'] = client_id
+            session.modified = True
         
         # Load configuration
         clients = load_clients()
@@ -777,13 +786,13 @@ def after_request(response):
     response.headers.add('X-XSS-Protection', '1; mode=block')
     response.headers.add('Strict-Transport-Security', 'max-age=31536000; includeSubDomains')
     
-    # CORS headers - these might be redundant with Flask-CORS but ensure they're set consistently
-    origin = request.headers.get('Origin')
-    if origin and origin in allowed_origins:
-        response.headers.add('Access-Control-Allow-Origin', origin)
-        response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-        response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
-        response.headers.add('Access-Control-Allow-Credentials', 'true')
+    # # CORS headers - these might be redundant with Flask-CORS but ensure they're set consistently
+    # origin = request.headers.get('Origin')
+    # if origin and origin in allowed_origins:
+    #     response.headers.add('Access-Control-Allow-Origin', origin)
+    #     response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    #     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    #     response.headers.add('Access-Control-Allow-Credentials', 'true')
     
     return response
 
@@ -802,11 +811,24 @@ def logout():
 def login_required(f):
     @functools.wraps(f)
     def decorated_function(*args, **kwargs):
-        if 'client_id' not in session or 'auth_token' not in session:
+        print("Login Required Check:")
+        print(f"Client ID in session: {session.get('client_id')}")
+        print(f"Auth Token in session: {'Present' if 'auth_token' in session else 'Missing'}")
+        
+        if 'client_id' not in session:
+            print("Authentication failed: No client_id in session")
             return jsonify({
                 'status': 'ERROR',
-                'message': 'Authentication required'
+                'message': 'Authentication required - No client ID'
             }), 401
+        
+        if 'auth_token' not in session:
+            print("Authentication failed: No auth_token in session")
+            return jsonify({
+                'status': 'ERROR',
+                'message': 'Authentication required - No auth token'
+            }), 401
+        
         return f(*args, **kwargs)
     return decorated_function
 
@@ -838,6 +860,54 @@ def get_ox_codes():
     conn.close()
     
     return jsonify(result)
+
+# Add this to app.py after the other API endpoints
+
+@app.route('/api/client-info', methods=['GET'])
+@login_required
+def get_client_info():
+    """Get information about the currently authenticated client"""
+    print("Debugging session")
+    print(session)
+
+    # Get client_id from session
+    client_id = session.get('client_id')
+    print("printing client id",client_id)
+    # Load client data
+    clients = load_clients()
+    
+    # Check if client exists
+    if client_id not in clients:
+        return jsonify({
+            'status': 'ERROR',
+            'message': 'Client not found'
+        }), 404
+    
+    # Get client data
+    client_data = clients[client_id]
+    
+    # Return client info (excluding password for security)
+    return jsonify({
+        'status': 'SUCCESS',
+        'client': {
+            'client_id': client_id,
+            'api_key': client_data['api_key'],
+            'userid': client_data['userid'],
+            'two_fa': client_data['two_fa'],
+            'vendor_info': client_data['vendor_info'],
+            'client_code': client_data.get('client_code', '')
+        }
+    })
+
+# Simple route to check session state
+@app.route('/api/check-session', methods=['GET'])
+def check_session():
+    """Check current session state"""
+    return jsonify({
+        'client_id': session.get('client_id'),
+        'has_auth_token': 'auth_token' in session,
+        'session_keys': list(session.keys())
+    })
 
 # API endpoint that demonstrates using the authenticated client
 @app.route('/api/test-auth', methods=['GET'])
@@ -917,6 +987,158 @@ def health_check():
         'timestamp': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         'version': os.getenv('APP_VERSION', '1.0.0')
     })
+
+@app.route('/')
+def hello():
+    return 'Hello'
+
+@app.route('/api/update-client', methods=['PUT'])
+@login_required
+def update_client():
+    """Update an existing client's credentials"""
+    data = request.json
+    if not data:
+        return jsonify({
+            'status': 'ERROR',
+            'message': 'No JSON data received'
+        }), 400
+    
+    # Get client_id from session - only allow updating the authenticated client
+    client_id = session.get('client_id')
+    
+    # Allow updates to these fields
+    api_key = data.get('api_key')
+    password = data.get('password')
+    two_fa = data.get('two_fa')  # PAN card number
+    vendor_info = data.get('vendor_info')
+    client_code = data.get('client_code')
+    
+    # Load existing clients
+    clients = load_clients()
+    
+    # Check if client exists
+    if client_id not in clients:
+        return jsonify({
+            'status': 'ERROR',
+            'message': 'Client not found'
+        }), 404
+    
+    # Get current client data
+    current_data = clients[client_id]
+    
+    # Update client data with new values if provided
+    updated_data = {
+        'api_key': api_key if api_key is not None else current_data['api_key'],
+        'userid': current_data['userid'],  # Don't allow changing userid
+        'password': password if password is not None else current_data.get('password', ''),
+        'two_fa': two_fa if two_fa is not None else current_data['two_fa'],
+        'vendor_info': vendor_info if vendor_info is not None else current_data['vendor_info'],
+        'client_code': client_code if client_code is not None else current_data.get('client_code')
+    }
+    
+    # Validate PAN card if provided
+    if two_fa:
+        pan_regex = r'^[A-Z]{5}[0-9]{4}[A-Z]{1}'
+        if not re.match(pan_regex, two_fa):
+            return jsonify({
+                'status': 'ERROR',
+                'message': 'Invalid PAN card format. It should be in the format ABCDE1234F'
+            }), 400
+    
+    # Ensure vendor_info is same as userid if specified
+    if vendor_info and vendor_info != current_data['userid']:
+        updated_data['vendor_info'] = current_data['userid']
+    
+    # Save updated client data
+    save_client(client_id, updated_data)
+    
+    # Re-initialize MOFSL client with updated credentials
+    if client_id in mofsl_clients:
+        # Remove the old client instance
+        del mofsl_clients[client_id]
+        # Get a new client instance
+        get_mofsl_client(client_id)
+    
+    return jsonify({
+        'status': 'SUCCESS',
+        'message': 'Client credentials updated successfully'
+    })
+
+@app.route('/api/admin/update-client', methods=['PUT'])
+def admin_update_client():
+    """Admin endpoint to update any client's credentials"""
+    data = request.json
+    if not data:
+        return jsonify({
+            'status': 'ERROR',
+            'message': 'No JSON data received'
+        }), 400
+    
+    # Get client_id from request data
+    client_id = data.get('client_id')
+    if not client_id:
+        return jsonify({
+            'status': 'ERROR',
+            'message': 'Client ID is required'
+        }), 400
+    
+    # Allow updates to these fields
+    api_key = data.get('api_key')
+    userid = data.get('userid')
+    password = data.get('password')
+    two_fa = data.get('two_fa')  # PAN card number
+    vendor_info = data.get('vendor_info')
+    client_code = data.get('client_code')
+    
+    # Load existing clients
+    clients = load_clients()
+    
+    # Check if client exists
+    if client_id not in clients:
+        return jsonify({
+            'status': 'ERROR',
+            'message': 'Client not found'
+        }), 404
+    
+    # Get current client data
+    current_data = clients[client_id]
+    
+    # Update client data with new values if provided
+    updated_data = {
+        'api_key': api_key if api_key is not None else current_data['api_key'],
+        'userid': userid if userid is not None else current_data['userid'],
+        'password': password if password is not None else current_data.get('password', ''),
+        'two_fa': two_fa if two_fa is not None else current_data['two_fa'],
+        'vendor_info': vendor_info if vendor_info is not None else current_data['vendor_info'],
+        'client_code': client_code if client_code is not None else current_data.get('client_code')
+    }
+    
+    # Validate PAN card if provided
+    if two_fa:
+        pan_regex = r'^[A-Z]{5}[0-9]{4}[A-Z]{1}'
+        if not re.match(pan_regex, two_fa):
+            return jsonify({
+                'status': 'ERROR',
+                'message': 'Invalid PAN card format. It should be in the format ABCDE1234F'
+            }), 400
+    
+    # Ensure vendor_info is same as userid if specified
+    if vendor_info and vendor_info != updated_data['userid']:
+        updated_data['vendor_info'] = updated_data['userid']
+    
+    # Save updated client data
+    save_client(client_id, updated_data)
+    
+    # Re-initialize MOFSL client with updated credentials
+    if client_id in mofsl_clients:
+        # Remove the old client instance
+        del mofsl_clients[client_id]
+    
+    return jsonify({
+        'status': 'SUCCESS',
+        'message': 'Client credentials updated successfully'
+    })
+
 
 if __name__ == '__main__':
     # Enable debug mode for development

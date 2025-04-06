@@ -42,3 +42,236 @@
 2025-04-04 16:25:41,101 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
 2025-04-04 16:25:41,113 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:230]
 2025-04-04 16:25:44,492 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:366]
+2025-04-05 12:56:26,964 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 12:56:26,994 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:242]
+2025-04-05 13:09:30,341 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:11:12,981 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:11:12,992 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:242]
+2025-04-05 13:13:16,413 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:378]
+2025-04-05 13:14:55,983 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:378]
+2025-04-05 13:16:26,032 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:16:26,043 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:242]
+2025-04-05 13:16:31,873 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:378]
+2025-04-05 13:17:41,750 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:17:41,762 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:242]
+2025-04-05 13:18:22,980 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:378]
+2025-04-05 13:20:28,617 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:20:28,628 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:242]
+2025-04-05 13:20:51,121 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:378]
+2025-04-05 13:22:32,186 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:378]
+2025-04-05 13:23:27,256 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:23:27,268 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:242]
+2025-04-05 13:24:21,378 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:378]
+2025-04-05 13:39:39,421 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:39:39,433 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 13:40:01,067 INFO: Auth test endpoint accessed by client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:863]
+2025-04-05 13:40:01,081 INFO: Auth test endpoint accessed by client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:863]
+2025-04-05 13:40:27,634 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:379]
+2025-04-05 13:42:25,936 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:379]
+2025-04-05 13:42:33,661 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:379]
+2025-04-05 13:42:46,457 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:42:46,469 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 13:42:52,238 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:379]
+2025-04-05 13:46:47,375 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:46:47,390 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 13:46:55,650 INFO: Auth test endpoint accessed by client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:898]
+2025-04-05 13:46:55,661 INFO: Auth test endpoint accessed by client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:898]
+2025-04-05 13:47:33,608 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:379]
+2025-04-05 13:50:37,438 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 13:50:37,451 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 13:51:03,243 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:379]
+2025-04-05 16:39:38,087 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 16:39:38,116 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:31:19,404 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:31:19,420 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:35:46,722 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:35:46,731 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:37:43,708 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:37:43,718 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:45:54,521 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:45:54,532 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:48:07,907 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:48:07,917 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:49:31,217 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:49:31,229 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:56:11,801 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:56:11,811 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:57:05,620 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:57:05,630 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:59:17,956 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:59:17,967 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 17:59:40,114 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 17:59:40,123 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:16:03,850 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:16:03,862 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:28:26,064 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:28:26,075 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:29:50,141 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:29:50,153 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:31:49,268 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:31:49,294 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:36:04,146 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:36:04,159 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:37:59,871 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:37:59,883 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:38:45,140 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:38:45,154 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:42:01,285 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:42:01,316 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:46:03,795 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:46:03,815 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:47:48,057 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:47:48,074 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:51:04,393 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:379]
+2025-04-05 18:51:47,531 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:379]
+2025-04-05 18:51:53,614 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:51:53,629 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:51:57,459 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:379]
+2025-04-05 18:56:17,990 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 18:56:18,007 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 18:56:22,067 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-05 19:02:20,299 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 19:02:20,320 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 19:02:31,335 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-05 19:02:43,690 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-05 19:10:19,960 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-05 19:11:29,250 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 19:11:29,265 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 19:11:32,674 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-05 19:13:07,051 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 19:13:07,075 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 19:13:15,659 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-05 19:30:23,083 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 19:30:23,104 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 19:30:39,883 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-05 19:30:39,902 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-05 19:30:56,426 INFO: Stored new auth token for client SRNG1802 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-06 09:57:18,791 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-06 09:57:18,810 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:243]
+2025-04-06 10:15:54,102 INFO: Stored new auth token for client DEPG1204 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-06 10:27:49,025 INFO: Stored new auth token for client DEPG1204 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-06 10:48:21,434 INFO: Stored new auth token for client DEPG1204 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:380]
+2025-04-06 10:57:55,255 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-06 10:57:55,265 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:245]
+2025-04-06 12:20:09,090 INFO: Application starting up [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:56]
+2025-04-06 12:20:09,099 INFO: Database initialized successfully [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:250]
+2025-04-06 12:20:17,265 INFO: Stored new auth token for client DEPG1204 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:364]
+2025-04-06 12:21:51,900 INFO: Stored new auth token for client DEPG1204 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:364]
+2025-04-06 12:22:49,147 INFO: Stored new auth token for client DEPG1204 [in /home/mrunal/Documents/novazen/mofsl-api-backend/app.py:364]
+2025-04-06 12:24:12,338 ERROR: Exception on /favicon.ico [GET] [in /home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/app.py", line 106, in handle_exception
+    if app.config['ENV'] == 'production':
+       ~~~~~~~~~~^^^^^^^
+KeyError: 'ENV'
+2025-04-06 12:24:17,474 ERROR: Exception on /api/session-test [GET] [in /home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/app.py", line 106, in handle_exception
+    if app.config['ENV'] == 'production':
+       ~~~~~~~~~~^^^^^^^
+KeyError: 'ENV'
+2025-04-06 12:24:17,624 ERROR: Exception on /favicon.ico [GET] [in /home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/venv/lib/python3.12/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mrunal/Documents/novazen/mofsl-api-backend/app.py", line 106, in handle_exception
+    if app.config['ENV'] == 'production':
+       ~~~~~~~~~~^^^^^^^
+KeyError: 'ENV'

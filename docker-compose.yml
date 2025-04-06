@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./mofsl-api-backend
+    container_name: flask-backend
+    networks:
+      - internal
+    environment:
+      - FLASK_ENV=production
+    # DO NOT expose port 5005 to outside
+
+  frontend:
+    build: ./mofsl-client-frontend
+    container_name: react-frontend
+    ports:
+      - "3005:90"  # Only expose frontend
+    depends_on:
+      - backend
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
